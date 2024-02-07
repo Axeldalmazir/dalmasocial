@@ -13,10 +13,13 @@ import {
 import { Users } from "../../dummyData";
 import CloseFriend from "../closeFriend/CloseFriend";
 
+
 export default function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebarWrapper">
+
+      {/*Create the differents options of the sidebar with the right icon */}
         <ul className="sidebarList">
           <li className="sidebarListItem">
             <RssFeed className="sidebarIcon" />
@@ -56,7 +59,11 @@ export default function Sidebar() {
           </li>
         </ul>
         <button className="sidebarButton">Show More</button>
+        
+        {/** Create the bar that seperate the two parts */}
         <hr className="sidebarHr" />
+        
+        {/*Create the logic to renders all the CloseFriends using the dummydata inside the list */}
         <ul className="sidebarFriendList">
           {Users.map((u) => (
             <CloseFriend key={u.id} user={u} />

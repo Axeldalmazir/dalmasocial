@@ -2,9 +2,13 @@ import "./share.css";
 import {PermMedia, Label,Room, EmojiEmotions} from "@material-ui/icons"
 
 export default function Share() {
+  
+  // Create the Share Components with the possibility to get the location/photos/videos
   return (
     <div className="share">
       <div className="shareWrapper">
+
+        {/* Create the top part of the Share components */}
         <div className="shareTop">
           <img className="shareProfileImg" src="/assets/person/1.jpeg" alt="" />
           <input
@@ -12,7 +16,9 @@ export default function Share() {
             className="shareInput"
           />
         </div>
-        <hr className="shareHr"/>
+        <hr className="shareHr"/> {/*Create the line between the two parts of the components */}
+
+            {/* Create the buttons for the Share components */}
         <div className="shareBottom">
             <div className="shareOptions">
                 <div className="shareOption">

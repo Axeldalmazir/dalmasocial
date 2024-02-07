@@ -3,7 +3,8 @@ import { Users } from "../../dummyData"
 import Online from "../online/Online";
 
 export default function Rightbar({ profile }) {
-const HomeRightBar = () => {
+// Component for the Homepage Right Bar 
+  const HomeRightBar = () => {
   return(
     <>
       <div className="birtdayContainer">
@@ -23,7 +24,7 @@ const HomeRightBar = () => {
   );
 };
 
-
+// Component for the Profile page right bar
   const ProfileRightBar = () => {
     return (
     <>
@@ -76,6 +77,7 @@ const HomeRightBar = () => {
     </>
     )
   }
+  // Return the right Right bar depending on the page 
   return (
     <div className="rightbar">
     <div className="rightbarWrapper">

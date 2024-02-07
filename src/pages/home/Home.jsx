@@ -4,6 +4,7 @@ import Feed from "../../components/feed/Feed";
 import Rightbar from "../../components/rightbar/Rightbar";
 import "./home.css"
 
+// Structure of the Home Page Component
 export default function Home() {
   return (
     <>
